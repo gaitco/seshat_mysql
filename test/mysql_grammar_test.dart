@@ -1,6 +1,6 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
-import 'package:maat_seshat_core/sqlite.dart';
-import 'package:maat_seshat_mysql/maat_seshat_mysql.dart';
+import 'package:seshat/seshat.dart';
+import 'package:seshat/sqlite.dart';
+import 'package:seshat_mysql/seshat_mysql.dart';
 import 'package:test/test.dart';
 
 void main() {
@@ -43,7 +43,7 @@ void main() {
 
     // Inherited from the base Grammar, which this package does not own: no
     // MySQL-side change can break it. Kept as cheap insurance against a
-    // maat_seshat_core change, not as coverage of anything here.
+    // seshat change, not as coverage of anything here.
     test('passes RawSql through untouched', () {
       expect(grammar.wrap(RawSql('count(*)')), 'count(*)');
     });

@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 
 /// MySQL query grammar: backtick-quoted identifiers, no `RETURNING`,
 /// `TRUNCATE TABLE`, and `DATETIME` literals that carry no zone.

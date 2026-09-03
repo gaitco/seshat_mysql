@@ -11,11 +11,11 @@ expose it as the `mysql` driver in `config('database')`.
 The only pure-Dart MySQL driver on pub.dev, **`mysql_client`, was last
 published in 2022 and is not actively maintained.** That is the reason this
 adapter lives in its own package instead of being a dependency of
-`maat_seshat_core` or `maat_seshat`: a driver the framework cannot rely on
+`seshat` or `seshat_maat`: a driver the framework cannot rely on
 must not be something every application carries.
 
 **Postgres and SQLite are the better-supported choices.** Both drivers used by
-`maat_seshat_core` (`package:postgres` and `package:sqlite3`) are maintained, and
+`seshat` (`package:postgres` and `package:sqlite3`) are maintained, and
 both adapters ship in the core package. Reach for this one when you have a
 MySQL server you do not control, not because MySQL is the default choice.
 
@@ -27,7 +27,7 @@ Two consequences of the driver you should know about before you deploy:
   `affectedRows` and `lastInsertID` as zero, which makes it unusable for
   `execute()` and `insertGetId()`, so this adapter uses the interpolating
   path. Values still never reach the server unescaped, and identifiers still
-  pass through `maat_seshat_core`'s identifier gate.
+  pass through `seshat`'s identifier gate.
 - **A `?` the driver would read as inside a string is left unbound.** The
   driver decides that by counting raw `'` and `"` in the prefix, which is not
   MySQL's grammar — it ignores backslash escapes. Rewriting such a `?` anyway
@@ -43,7 +43,7 @@ Two consequences of the driver you should know about before you deploy:
 ## Use
 
 ```dart
-import 'package:maat_seshat_mysql/maat_seshat_mysql.dart';
+import 'package:seshat_mysql/seshat_mysql.dart';
 
 registerMysqlDriver();          // before Application.create()
 ```

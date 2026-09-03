@@ -1,5 +1,5 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
-import 'package:maat_seshat_mysql/maat_seshat_mysql.dart';
+import 'package:seshat/seshat.dart';
+import 'package:seshat_mysql/seshat_mysql.dart';
 import 'package:test/test.dart';
 
 /// `mysql_client` binds by name; the grammar emits positional `?`. These

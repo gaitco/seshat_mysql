@@ -2,9 +2,9 @@
 /// (`package:mysql_client`, pure Dart).
 library;
 
-// maat_seshat re-exports maat_seshat_core, so registerSchemaGrammar
+// seshat_maat re-exports seshat, so registerSchemaGrammar
 // comes in with it.
-import 'package:maat_seshat/maat_seshat.dart';
+import 'package:seshat_maat/seshat_maat.dart';
 
 import 'src/mysql_connection.dart';
 import 'src/mysql_schema_grammar.dart';
