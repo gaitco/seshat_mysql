@@ -3,14 +3,14 @@
 //     dart test --tags=mysql
 //
 // The `mysql` tag is skipped by default in dart_test.yaml, exactly as
-// maat_seshat_core's postgres_test.dart is skipped without PG_TEST_URL.
+// seshat's postgres_test.dart is skipped without PG_TEST_URL.
 @Tags(['mysql'])
 library;
 
 import 'dart:io';
 
-import 'package:maat_seshat_core/maat_seshat_core.dart';
-import 'package:maat_seshat_mysql/maat_seshat_mysql.dart';
+import 'package:seshat/seshat.dart';
+import 'package:seshat_mysql/seshat_mysql.dart';
 import 'package:test/test.dart';
 
 /// `secure: false` because the local test server does not offer TLS. It is

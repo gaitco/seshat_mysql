@@ -1,4 +1,4 @@
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 
 /// MySQL DDL: backtick identifiers, `auto_increment` keys, `datetime`
 /// columns and `information_schema` for the catalogue queries.

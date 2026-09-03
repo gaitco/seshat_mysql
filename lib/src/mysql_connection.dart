@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:maat_seshat_core/maat_seshat_core.dart';
+import 'package:seshat/seshat.dart';
 import 'package:mysql_client/exception.dart' as my;
 import 'package:mysql_client/mysql_client.dart' as my;
 

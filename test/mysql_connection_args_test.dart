@@ -1,7 +1,7 @@
-import 'package:maat_seshat_mysql/maat_seshat_mysql.dart';
+import 'package:seshat_mysql/seshat_mysql.dart';
 import 'package:test/test.dart';
 
-/// `maat_ptah`'s skeleton ships `'pool': {'max': ...}` — a nested
+/// `ptah`'s skeleton ships `'pool': {'max': ...}` — a nested
 /// map, not an int — for both mysql and pgsql. `mysqlConnectionArgs` is the
 /// pure argument mapping `registerMysqlDriver` calls before ever opening a
 /// socket, so this proves the shipped shape is read correctly with no
