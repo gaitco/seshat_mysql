@@ -1,0 +1,3 @@
+tags:
+  mysql:
+    skip: "Requires a running MySQL. Run with: dart test --tags=mysql"

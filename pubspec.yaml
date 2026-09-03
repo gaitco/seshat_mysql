@@ -1,0 +1,13 @@
+name: maat_seshat_mysql
+description: MySQL adapter for Maat's database layer.
+version: 0.1.0
+repository: https://github.com/gaitco/maat_seshat_mysql
+environment:
+  sdk: ^3.12.0
+dependencies:
+  maat_seshat_core: ^0.1.0
+  maat_seshat: ^0.1.0
+  mysql_client: ^0.0.27
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.31.2
